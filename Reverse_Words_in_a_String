@@ -1,0 +1,9 @@
+class Solution(object):
+    def reverseWords(self, s):
+        s_result = ""
+        s = s.strip()
+        dd = s.split(" ")
+        for i in reversed(dd):
+            if i != "":
+                s_result =  s_result + i + " "         
+        return s_result.strip()
